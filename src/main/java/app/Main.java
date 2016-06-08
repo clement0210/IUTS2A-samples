@@ -1,5 +1,6 @@
 package app;
 
+import app.mail.MailSender;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

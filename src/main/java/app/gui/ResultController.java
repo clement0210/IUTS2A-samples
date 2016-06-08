@@ -1,5 +1,6 @@
-package app;
+package app.gui;
 
+import app.model.Student;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 

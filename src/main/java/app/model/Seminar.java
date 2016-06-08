@@ -1,10 +1,14 @@
-package app;
+package app.model;
 
 import javafx.beans.property.SimpleStringProperty;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by cduffau on 24/05/16.
  */
+@XmlRootElement
 public class Seminar {
 
     private SimpleStringProperty name;
@@ -17,6 +21,7 @@ public class Seminar {
         this.mark=new SimpleStringProperty(mark);
     }
 
+    @XmlElement
     public String getName(){
         return this.name.get();
     }
@@ -24,12 +29,15 @@ public class Seminar {
         this.name=new SimpleStringProperty(name);
     }
 
+    @XmlElement
     public String getTime(){
         return this.time.get();
     }
     public void setTime(String time){
         this.time=new SimpleStringProperty(time);
     }
+
+    @XmlElement
     public String getMark(){
         return this.mark.get();
     }
@@ -39,7 +47,7 @@ public class Seminar {
 
     @Override
     public String toString() {
-        return "app.Seminar{" + "\n"+
+        return "Seminar{" + "\n"+
                 "name=" + name.get() + "\n"+
                 ", time=" + time.get() + "\n"+
                 ", mark=" + mark.get() + "\n"+

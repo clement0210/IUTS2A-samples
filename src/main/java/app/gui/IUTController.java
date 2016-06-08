@@ -1,5 +1,7 @@
-package app;
+package app.gui;
 
+import app.model.Seminar;
+import app.model.Student;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
